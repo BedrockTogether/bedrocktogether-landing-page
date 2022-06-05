@@ -45,7 +45,7 @@ features                                  :
 
   - title                                 : Availability
     description                           : App is available in AppStore, GooglePlay and Amazon App Store.
-    fontawesome_icon_name                 : mobile-notch
+    fontawesome_icon_name                 : mobile
 
 # Theme Settings
 topbar_color                              : "#000000"
