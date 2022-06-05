@@ -39,12 +39,16 @@ mastodon_link                             :
 features                                  :
   
   - title                                 : Rating
-    description                           : "AppStore rating: 4.4 based on 25 000 users reviews. <br> GooglePlay rating: 4.3 based on 1 100 users reviews."
+    description                           : "AppStore rating: 4.4 based on 25000 users reviews. <br> GooglePlay rating: 4.3 based on 1100 users reviews."
     fontawesome_icon_name                 : star
 
   - title                                 : Downloads
-    description                           : "AppStore downloads: 643 462. <br> GooglePlay downloads: 43 767."
+    description                           : "AppStore downloads: 643462. <br> GooglePlay downloads: 43767."
     fontawesome_icon_name                 : download
+
+  - title                                 : Availability
+    description                           : App is available in AppStore, GooglePlay and Amazon App Store.
+    fontawesome_icon_name                 : mobile-notch
 
 # Theme Settings
 topbar_color                              : "#000000"
