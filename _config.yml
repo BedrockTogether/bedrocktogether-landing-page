@@ -20,10 +20,10 @@ enable_smart_app_banner                   : true                                
 
 
 # Information About Yourself
-your_name                                 : Extollite
+your_name                                 : BedrockTogether Team
 your_link                                 : https://extollite.pl
-your_city                                 : Krakow
-email_address                             :
+your_city                                 :
+email_address                             : jracibor@outlook.com
 linkedin_username                         :
 linkedin_company                          :
 facebook_username                         : bedrocktogether
@@ -31,7 +31,7 @@ instagram_username                        : bedrocktogether
 twitter_username                          :
 github_username                           :
 youtube_username                          :
-mastodon_link                             : 
+mastodon_link                             :
 
 
 
@@ -47,7 +47,7 @@ features                                  :
     fontawesome_icon_name                 : download
 
   - title                                 : Availability
-    description                           : App is available in AppStore, GooglePlay and Amazon App Store.
+    description                           : Available in AppStore, GooglePlay and Amazon App Store.
     fontawesome_icon_name                 : mobile
 
 # Theme Settings
