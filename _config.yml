@@ -36,11 +36,11 @@ youtube_username                          :
 features                                  :
   
   - title                                 : Rating
-    description                           : "AppStore rating: 4.4 based on 54 000 users reviews. <br> GooglePlay rating: 4.4 based on 9 300 users reviews."
+    description                           : "AppStore rating: 4.5 based on 65 000 users reviews. <br> GooglePlay rating: 4.6 based on 12 500 users reviews."
     fontawesome_icon_name                 : star
 
   - title                                 : Downloads
-    description                           : "AppStore downloads: 1 280 000. <br> GooglePlay downloads: 540 000."
+    description                           : "AppStore downloads: 1 490 000. <br> GooglePlay downloads: 730 000."
     fontawesome_icon_name                 : download
 
   - title                                 : Availability
