@@ -40,11 +40,11 @@ mastodon_link                             :
 features                                  :
 
   - title                                 : Rating
-    description                           : "AppStore rating: 4.5 based on 74 000 users reviews. <br> GooglePlay rating: 4.6 based on 15 000 users reviews."
+    description                           : "AppStore rating: 4.5 based on 78 000 users reviews. <br> GooglePlay rating: 4.5 based on 16 000 users reviews."
     fontawesome_icon_name                 : star
 
   - title                                 : Downloads
-    description                           : "AppStore downloads: 1 660 000. <br> GooglePlay downloads: 890 000."
+    description                           : "AppStore downloads: 1 778 000. <br> GooglePlay downloads: 985 000."
     fontawesome_icon_name                 : download
 
   - title                                 : Availability
