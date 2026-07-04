@@ -1,19 +1,45 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : BedrockTogether                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+
+# ---------------------------------------------------------------------------
+# SEO settings (consumed by jekyll-seo-tag). GitHub Pages does not run the
+# App Store auto-populate plugin, so these are set manually.
+# ---------------------------------------------------------------------------
+title                                     : BedrockTogether
+tagline                                   : "Bedrock Servers on Xbox & PlayStation"
+url                                       : "https://bedrocktogether.net"
+description                               : "BedrockTogether makes any Minecraft Bedrock Edition server appear as a LAN game on Xbox, PlayStation & Nintendo Switch. Join your favourite server in seconds — no PC required."
+author                                    : BedrockTogether Team
+logo                                      : /assets/squircle120.svg
+image                                     : /assets/headerimage.png
+twitter:
+  card                                    : summary_large_image
+social:
+  name                                    : BedrockTogether
+  links:
+    - https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp
+    - https://apps.apple.com/app/id1534593376
+    - https://discord.gg/PDEfcUaKFj
+    - https://facebook.com/bedrocktogether
+    - https://instagram.com/bedrocktogether
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # App Info
 ios_app_id                                : 1534593376                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/app/bedrocktogether/id1534593376   # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            : https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp&hl=en&gl=US                                          # Enter Google Play Store URL.
 presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file).
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 discord_link                              : https://discord.gg/PDEfcUaKFj
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_icon                                  : /assets/squircle120.svg                    # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_name                                  : BedrockTogether                            # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_price                                 : Free                                       # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : BedrockTogether allows any Bedrock Edition server to show up as a LAN server on Xbox or PlayStation Minecraft and permits a simple connection!
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
