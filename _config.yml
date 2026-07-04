@@ -10,7 +10,7 @@ tagline                                   : "Bedrock Servers on Xbox & PlayStati
 url                                       : "https://bedrocktogether.net"
 description                               : "BedrockTogether makes any Minecraft Bedrock Edition server appear as a LAN game on Xbox, PlayStation & Nintendo Switch. Join your favourite server in seconds — no PC required."
 author                                    : BedrockTogether Team
-logo                                      : /assets/squircle120.svg
+logo                                      : /assets/appicon.png
 image                                     : /assets/headerimage.png
 twitter:
   card                                    : summary_large_image
@@ -37,7 +37,7 @@ presskit_download_link                    :                                     
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
 discord_link                              : https://discord.gg/PDEfcUaKFj
 
-app_icon                                  : /assets/squircle120.svg                    # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
+app_icon                                  : /assets/appicon.png                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : BedrockTogether                            # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Free                                       # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : BedrockTogether allows any Bedrock Edition server to show up as a LAN server on Xbox or PlayStation Minecraft and permits a simple connection!
