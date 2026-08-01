@@ -8,15 +8,14 @@
 	     url/image/twitter/social) and per-page front matter. -->
 	{% seo %}
 
-	<!-- Favicon. Deliberately NOT the App Store icon: its pale sky and fine pixel
-	     detail turn to mush at 16px and disappear against a white search result.
-	     This is a simplified, high-contrast version of the same mark. -->
+	<!-- Favicon: the app icon, pre-resampled to each size rather than letting the
+	     browser squash the 480px original down to 16px. Regenerate with:
+	     magick assets/appicon.png -filter box -resize 16x16 -unsharp 0x0.6+0.8+0 ... -->
 	<link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" sizes="any">
-	<link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/favicon-96.png' | relative_url }}">
 	<link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/favicon-192.png' | relative_url }}">
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
-	<meta name="theme-color" content="#2E7CD6">
+	<meta name="theme-color" content="#ADC7E6">
 
 	<!-- Smart App Banner -->
 	{% if site.enable_smart_app_banner %}
