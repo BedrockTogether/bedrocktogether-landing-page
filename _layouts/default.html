@@ -51,14 +51,15 @@
                             </p>
                         </div>
                         <div class="downloadButtonsContainer">
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
+                            <a class="appStoreLink" href="{{site.appstore_link}}" target="_blank" rel="noopener"><img class="appStore" src="assets/appstore.png" alt="Download BedrockTogether on the App Store"></a>
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                                <a class="playStoreLink" href="{{site.playstore_link}}" target="_blank" rel="noopener"><img class="playStore" src="assets/playstore.png" alt="Get BedrockTogether on Google Play"></a>
                             {% endif %}
-                            <a class="discordLink" href="{{site.discord_link}}"><img class="discordLink" src="assets/discord.png"></a>
+                            <a class="discordLink" href="{{site.discord_link}}" target="_blank" rel="noopener"><img class="discordLink" src="assets/discord.png" alt="Join the BedrockTogether Discord"></a>
                         </div>
                     </div>
                     {% include features.html %}
+                    {% include guides.html %}
                     {% include footer.html %}
                     {% include appstoreimages.html %}
                 </div>

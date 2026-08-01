@@ -5,7 +5,7 @@
 	<div class="footerIcons">
 
 		{% if site.linkedin_username %}
-			<a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+			<a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
@@ -14,7 +14,7 @@
 		{% endif %}
 
 		{% if site.linkedin_company %}
-			<a href="https://linkedin.com/company/{{ site.linkedin_company }}">
+			<a href="https://linkedin.com/company/{{ site.linkedin_company }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
@@ -23,7 +23,7 @@
 		{% endif %}
 
 		{% if site.facebook_username %}
-			<a href="https://facebook.com/{{ site.facebook_username }}">
+			<a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
@@ -32,7 +32,7 @@
 		{% endif %}
 
 		{% if site.twitter_username %}
-			<a href="https://twitter.com/{{ site.twitter_username }}">
+			<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-twitter fa-stack-1x"></i>
@@ -41,7 +41,7 @@
 		{% endif %}
 
 		{% if site.instagram_username %}
-			<a href="https://instagram.com/{{ site.instagram_username }}">
+			<a href="https://instagram.com/{{ site.instagram_username }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
@@ -59,7 +59,7 @@
 		{% endif %}
 
 		{% if site.github_username %}
-			<a href="https://github.com/{{ site.github_username }}">
+			<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
 				<span class="fa-stack fa-1x">
 					<i class="socialIconBack fas fa-circle fa-stack-2x"></i>
 					<i class="socialIconTop fab fa-github fa-stack-1x"></i>
@@ -78,11 +78,13 @@
 
 	</div>
 	<div class="footerLinks">
-		{% for page in site.pages %}
-			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+		<a href="{{ '/' | relative_url }}">Home</a>
+		{% assign footer_pages = site.pages | sort: "nav_order" %}
+		{% for footer_page in footer_pages %}
+			<a href="{{ footer_page.url | relative_url }}">{{ footer_page.nav_title | default: footer_page.title }}</a>
 		{% endfor %}
 		{% if site.presskit_download_link %}
-			<a href="{{ site.presskit_download_link }}">Press Kit</a>
+			<a href="{{ site.presskit_download_link }}" target="_blank" rel="noopener">Press Kit</a>
 		{% endif %}
 	</div>
 </footer>

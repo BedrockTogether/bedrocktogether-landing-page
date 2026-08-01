@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480" shape-rendering="crispEdges">
+  <!-- Saturated background so the mark reads as a solid tile in search results -->
+  <rect x="0" y="0" width="480" height="480" fill="#2E7CD6"/>
+
+  <!-- Cloud: chunky pixel rows, kept clear of the edges so a circle crop is safe -->
+  <rect x="150" y="60"  width="180" height="30" fill="#FFFFFF"/>
+  <rect x="90"  y="90"  width="300" height="30" fill="#FFFFFF"/>
+  <rect x="60"  y="120" width="360" height="30" fill="#FFFFFF"/>
+  <rect x="60"  y="150" width="360" height="30" fill="#FFFFFF"/>
+  <!-- Shaded underside gives the pixel-art read without adding small detail -->
+  <rect x="90"  y="180" width="300" height="30" fill="#C9D9EC"/>
+
+  <!-- Single short connection pipe (three thin ones vanished when scaled down) -->
+  <rect x="210" y="210" width="60" height="30" fill="#D63B2F"/>
+  <rect x="240" y="210" width="30" height="30" fill="#A82A20"/>
+
+  <!-- One large grass block instead of three small ones -->
+  <rect x="120" y="240" width="240" height="30" fill="#6DBE45"/>
+  <rect x="120" y="270" width="240" height="30" fill="#57A038"/>
+  <rect x="120" y="300" width="240" height="120" fill="#8C5A3B"/>
+  <rect x="150" y="300" width="30"  height="30" fill="#74472C"/>
+  <rect x="270" y="330" width="30"  height="30" fill="#74472C"/>
+  <rect x="180" y="360" width="30"  height="30" fill="#74472C"/>
+</svg>

@@ -1,0 +1,10 @@
+<div class="pageCta">
+	<p class="pageCtaText">Get BedrockTogether — free on iOS and Android.</p>
+	<div class="downloadButtonsContainer">
+		<a class="appStoreLink" href="{{ site.appstore_link }}" target="_blank" rel="noopener"><img class="appStore" src="{{ '/assets/appstore.png' | relative_url }}" alt="Download BedrockTogether on the App Store"></a>
+		{% if site.playstore_link %}
+			<a class="playStoreLink" href="{{ site.playstore_link }}" target="_blank" rel="noopener"><img class="playStore" src="{{ '/assets/playstore.png' | relative_url }}" alt="Get BedrockTogether on Google Play"></a>
+		{% endif %}
+		<a class="discordLink" href="{{ site.discord_link }}" target="_blank" rel="noopener"><img class="discordLink" src="{{ '/assets/discord.png' | relative_url }}" alt="Join the BedrockTogether Discord"></a>
+	</div>
+</div>

@@ -15,8 +15,9 @@ $(function() {
             console.info("Image strings loaded from Apple API.");
             var appInfo = json.results[0];
 
-            // Set favicon
-            $('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
+            // NB: this used to overwrite the favicon with the App Store artwork,
+            // which is exactly the icon that is unreadable at favicon sizes.
+            // The favicon is now set statically in head.html — leave it alone.
 
             // Set page title using the iOS app ID if it is not set manually in _config.yml
             var $pageTitle = $(".pageTitle");
