@@ -686,6 +686,21 @@ footer {
 	margin-right: 0px;
 }
 
+/* Mojang brand guidelines require this notice to appear on the product,
+   listing, description and website. Lives in the footer so every page
+   inherits it rather than each page repeating its own wording. */
+.footerDisclaimer {
+	color: $footer-text-color;
+	opacity: 0.75;
+	width: 100%;
+	max-width: 680px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.75rem;
+	line-height: 1.6;
+	padding-bottom: 70px;
+}
+
 
 @media only screen and (max-width: 768px) {
 
