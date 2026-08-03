@@ -55,7 +55,10 @@
                             {% if site.playstore_link %}
                                 <a class="playStoreLink" href="{{site.playstore_link}}" target="_blank" rel="noopener"><img class="playStore" src="assets/playstore.png" alt="Get BedrockTogether on Google Play"></a>
                             {% endif %}
-                            <a class="discordLink" href="{{site.discord_link}}" target="_blank" rel="noopener"><img class="discordLink" src="assets/discord.png" alt="Join the BedrockTogether Discord"></a>
+                            <a class="discordButton" href="{{site.discord_link}}" target="_blank" rel="noopener">
+                                <i class="fab fa-discord" aria-hidden="true"></i>
+                                <span>Join the Discord</span>
+                            </a>
                         </div>
                     </div>
                     {% include features.html %}

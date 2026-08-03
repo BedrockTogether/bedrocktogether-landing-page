@@ -66,7 +66,7 @@ friends who are not in your house, they run the app on their own network.
 
 ## Get the app
 
-BedrockTogether is free on the App Store, Google Play and the Amazon App Store. A
+BedrockTogether is free on the App Store and Google Play. A
 paid ad-free version is available from **Info → Ad-free Version** inside the app.
 
 See also: [PlayStation guide](/how-to-join-minecraft-server-playstation/) ·

@@ -62,7 +62,7 @@ on the server, the app has done its job and can be closed.
 
 ## Get the app
 
-BedrockTogether is free on the App Store, Google Play and the Amazon App Store. The
+BedrockTogether is free on the App Store and Google Play. The
 ad-free version is available from **Info → Ad-free Version** in the app.
 
 See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·

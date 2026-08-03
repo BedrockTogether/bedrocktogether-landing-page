@@ -13,7 +13,7 @@ seo:
 
 ## Is BedrockTogether free?
 
-Yes. The app is free on the App Store, Google Play and the Amazon App Store, and is paid
+Yes. The app is free on the App Store and Google Play, and is paid
 for by ads. There is an ad-free version if you would rather not watch them, available
 from **Info → Ad-free Version** in the app. Saving more than two favourite servers is
 also part of the paid version.
@@ -104,7 +104,7 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "name": "Is BedrockTogether free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The app is free on the App Store, Google Play and the Amazon App Store and is paid for by ads. An ad-free version is available from Info → Ad-free Version inside the app."
+        "text": "Yes. The app is free on the App Store and Google Play and is paid for by ads. An ad-free version is available from Info → Ad-free Version inside the app."
       }
     },
     {

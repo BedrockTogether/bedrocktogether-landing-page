@@ -14,8 +14,8 @@ seo:
 **Last updated: 2 August 2026**
 
 This policy explains what BedrockTogether collects, why, and what you can do about
-it. It covers the BedrockTogether and BedrockTogether (Pro) apps on the App Store,
-Google Play and the Amazon App Store.
+it. It covers the BedrockTogether and BedrockTogether (Pro) apps on the App Store
+and Google Play.
 
 BedrockTogether is not affiliated with or endorsed by Microsoft, Mojang, Xbox,
 Sony or Nintendo.
