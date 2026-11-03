@@ -39,6 +39,11 @@ removed when you uninstall the app.
 The address of a server is of course sent to that server when you connect to it,
 because that is how connecting works. We are not a party to that connection.
 
+**Live player counts.** To show whether a listed server is online and how many
+players it has, your device contacts the servers visible in the app's server lists
+directly. Those servers, which are run by third parties, can see your IP address
+when this happens, even if you do not join them. We do not receive the results.
+
 ## What the app collects
 
 **A per-install identifier.** The app generates a random identifier the first time
@@ -48,7 +53,7 @@ not your name, your account, or an identifier that follows you across other apps
 
 **Connection events.** When you start a transfer or a broadcast, the app records
 that it happened, which method was used, and whether it succeeded. This is sent to
-our own server at `extollite.pl` and to Firebase Analytics. It does not include
+our own service at `extollite.pl`, hosted on Cloudflare, and to Firebase Analytics. It does not include
 the server you connected to being tied to you personally.
 
 **Crash and performance diagnostics,** through Firebase Crashlytics, so faults can
