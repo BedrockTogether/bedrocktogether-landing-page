@@ -81,9 +81,10 @@ close Minecraft on that device and any other server apps, then start again.
 
 ## Where do I find servers to play on?
 
-Any public Bedrock server address works. On Android the **Servers** tab is a searchable
-catalog, with sponsored and partner rows marked, and live player counts that are
-measured from your own device — "Offline" means your device could not reach that server.
+Any public Bedrock server address works. On Android and iPhone the **Servers** tab is a
+searchable catalog (it may not be available to everyone yet), with sponsored and partner
+rows marked, and live player counts that are measured from your own device — "Offline"
+means your device could not reach that server.
 The app also lists Partnered Servers on the main screen (Pro hides that list), and you
 can save your own favourites (2 in the free app, unlimited in Pro).
 
