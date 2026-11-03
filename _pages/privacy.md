@@ -11,7 +11,7 @@ seo:
 
 # Privacy Policy
 
-**Last updated: 2 August 2026**
+**Last updated: 3 November 2026**
 
 This policy explains what BedrockTogether collects, why, and what you can do about
 it. It covers the BedrockTogether and BedrockTogether (Pro) apps on the App Store
@@ -32,32 +32,62 @@ from.
 
 ## What stays on your device
 
-Server addresses and ports you enter, your saved favourite servers, and your app
-settings are stored **on your device only**. They are not uploaded, and they are
-removed when you uninstall the app.
+Your saved favourite servers and your app settings are stored **on your device
+only**. They are not uploaded, and they are removed when you uninstall the app.
 
-The address of a server is of course sent to that server when you connect to it,
-because that is how connecting works. We are not a party to that connection.
+The server addresses and ports you enter are **not** purely local: when you start a
+transfer or a broadcast, the address and port you used are sent to our service, as
+described under "Connection events" below. The address is also sent to that server
+when you connect to it, because that is how connecting works. We are not a party to
+that connection.
 
 **Live player counts.** To show whether a listed server is online and how many
 players it has, your device contacts the servers visible in the app's server lists
 directly. Those servers, which are run by third parties, can see your IP address
 when this happens, even if you do not join them. We do not receive the results.
+These checks do not go through our service.
 
 ## What the app collects
 
 **A per-install identifier.** The app generates a random identifier the first time
-it runs and keeps it until you uninstall. It is sent with the items below so that
-repeated events from one device can be counted once rather than many times. It is
-not your name, your account, or an identifier that follows you across other apps.
+it runs and keeps it until you uninstall. It is sent with each connection event to
+our own service (below) and is set as the user ID on crash reports, so that repeated
+events from one device can be counted once rather than many times. It is not your
+name, your account, or an identifier that follows you across other apps, but it is
+stable for as long as the app stays installed. The app does not currently display
+this identifier anywhere. (Firebase Analytics also keeps its own app-instance
+identifier, which is separate.)
 
-**Connection events.** When you start a transfer or a broadcast, the app records
-that it happened, which method was used, and whether it succeeded. This is sent to
-our own service at `extollite.pl`, hosted on Cloudflare, and to Firebase Analytics. It does not include
-the server you connected to being tied to you personally.
+**Connection events.** Each time you start a transfer or a broadcast, the app sends
+a record to our own service at `extollite.pl`. That record contains the **server
+address and port** you transferred to (or, for a broadcast, the target host), the
+**per-install identifier**, and the **device type** (iOS or Android). Our service adds
+the time it received it. The record is therefore linked to your install: the history
+of servers connected to from one install can be put together. It is pseudonymous,
+because it holds no name, account or email, but it is not anonymous. Our service does
+not store your IP address with the record. Separately, the same action is sent to
+Firebase Analytics as an event naming the method used (and, if you pick a listed or
+partnered server, that server), and failures are sent with a short reason category.
+If you use Pro, the same applies in that app.
 
 **Crash and performance diagnostics,** through Firebase Crashlytics, so faults can
-be found and fixed.
+be found and fixed. Crash reports carry the per-install identifier as the user ID.
+
+**Servers that help your devices connect.** To let a console reach your phone, the
+app asks our Cloudflare-hosted service for relay (TURN/ICE) server details, and a
+signaling service passes the connection setup between the devices. Those requests
+reveal your IP address to Cloudflare as the network provider, and the signaling
+service sees the host and port of the destination server involved and records it in
+operational logs. Requests may also carry the app's name and version, and, where
+supported, an app-integrity token from Firebase App Check (Google Play Integrity or
+Apple App Attest), used to check the request comes from a genuine copy of the app.
+When a relay is used, your game traffic for that session passes through Cloudflare's
+relay. We do not store a profile from these requests. The app may also ask a public
+STUN server run by Cloudflare for your public address, to set up the connection.
+
+**Diagnostic logs.** If you switch on diagnostic logging in the app, technical
+connection logs are kept on your device (for seven days on iOS) and are only
+shared if you choose to share them. Nothing is uploaded automatically.
 
 **Advertising identifiers and ad interaction data,** handled by the advertising
 partners listed below. Those partners may also derive an approximate location
@@ -132,15 +162,21 @@ you first used the app so the request can be matched. Requests are answered with
 one month. You also have the right to complain to your data protection authority —
 in Poland, the President of the Personal Data Protection Office (UODO).
 
-**Deleting everything** is always possible by uninstalling the app, which removes
-all locally stored data. To have the per-install identifier and its events removed
-from our server as well, email the address above.
+**Deleting everything.** Uninstalling the app removes all locally stored data,
+including the per-install identifier. It does **not** remove connection records
+already stored on our server (see "How long data is kept"). Because the identifier
+is not shown in the app, tell us which app, the approximate dates you used it and
+servers you connected to when you email the address above; we will try to find
+and delete the records that match. Deletion of records by identifier is technically
+possible. We can only find records we can match, so a request that gives too little
+information may not be fulfilled, and we will tell you if so.
 
 ## Legal bases (GDPR)
 
 * **Consent** — personalised advertising, and analytics where consent is required.
 * **Legitimate interests** — keeping the app working, diagnosing crashes,
-  preventing abuse, and counting usage in aggregate.
+  preventing abuse, counting usage, and keeping a record of connections made
+  through the app.
 * **Legal obligation** — age assurance and the protections that follow from it.
 * **Contract** — providing the connection features you asked for.
 
@@ -160,9 +196,28 @@ deleted.
 
 ## How long data is kept
 
-Locally stored data lasts until you uninstall. Connection events and crash reports
-are kept for up to 24 months and then deleted. Advertising partners apply their own
-retention periods, described in their policies.
+Locally stored data lasts until you uninstall.
+
+**Connection records on our server are kept indefinitely.** For roughly the first
+365 days they sit in a Cloudflare D1 database. After that, a daily job moves them
+into Cloudflare R2 object storage as compressed archive files. Nothing is deleted
+automatically, either from the database or from the archive. Older records from our
+previous self-hosted server (a VPS running PostgreSQL) are being archived the same way,
+and that server is being retired. You can ask for records to be deleted at any time,
+as described above.
+
+Crash reports and Firebase Analytics data are kept according to the retention
+settings of Firebase (Google). Advertising partners apply their own retention
+periods, described in their policies.
+
+## Where data is processed
+
+Our service runs on Cloudflare (Workers, D1 database and R2 storage), which acts as
+our hosting provider and processor. In the normal course of serving any request,
+Cloudflare as a network provider sees the IP address of whoever makes it; our service
+does not store that address with connection records. Firebase (Google) processes
+analytics and crash data. Data may be processed outside your country, including
+outside the EEA.
 
 ## Changes to this policy
 
