@@ -115,14 +115,19 @@ cannot answer, the app asks you directly for your month and year of birth.
 at/above it. **Your date of birth is not stored**, not sent anywhere, and not
 attached to any analytics event.
 
-**What it changes.** Below the applicable age for your country, personalised
-advertising and tracking are switched off: no advertising identifier is
-transmitted, and ads are selected from context rather than from anything about
-you. The threshold varies by country because the law does — 13 in the United
-States, 13 to 16 across the EU, 18 in the United Kingdom and India.
+**What it changes.** Below the applicable age for your country, the age band
+restricts **advertising only**: the app tells its ad networks that the user is a
+minor (child-directed or under the age of consent), turns off personalised ads
+and limits ad content to a child-appropriate rating, so ads are selected from
+context rather than from anything about you. The threshold varies by country
+because the law does — 13 in the United States, 13 to 16 across the EU, 18 in the
+United Kingdom and India.
 
-The age result is used only to apply these protections. It is never used to target
-advertising, to build a profile, or for analytics.
+The age band does **not** switch off the other collection described above:
+connection records, crash reports and Firebase Analytics events are recorded in
+the same way whatever the age band. The age result is used only to apply the
+advertising protections. It is never used to target advertising or to build a
+profile, and it is not attached to any analytics event.
 
 ## Advertising
 
@@ -173,10 +178,12 @@ information may not be fulfilled, and we will tell you if so.
 
 ## Legal bases (GDPR)
 
-* **Consent** — personalised advertising, and analytics where consent is required.
+* **Consent** — personalised advertising (the consent prompt described under
+  "Your choices" applies to advertising; analytics and crash reporting are not
+  switched off by it).
 * **Legitimate interests** — keeping the app working, diagnosing crashes,
-  preventing abuse, counting usage, and keeping a record of connections made
-  through the app.
+  preventing abuse, counting usage (including Firebase Analytics), and keeping a
+  record of connections made through the app.
 * **Legal obligation** — age assurance and the protections that follow from it.
 * **Contract** — providing the connection features you asked for.
 
@@ -187,8 +194,9 @@ children.
 
 We do not knowingly collect personal information from a child below the applicable
 age in their country for advertising purposes. Where the age assurance described
-above identifies a user as below that age, personalised advertising and tracking
-are disabled and no advertising identifier is transmitted.
+above identifies a user as below that age, personalised advertising is disabled
+and the ad networks are told the user is a minor. Connection records, crash
+reports and analytics described above still apply to all users.
 
 If you are a parent or guardian and believe your child has provided personal
 information, email [jedrzej@extollite.pl](mailto:jedrzej@extollite.pl) and it will be
