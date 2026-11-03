@@ -80,7 +80,7 @@ reveal your IP address to Cloudflare as the network provider, and the signaling
 service sees the host and port of the destination server involved and records it in
 operational logs. Requests may also carry the app's name and version, and, where
 supported, an app-integrity token from Firebase App Check (Google Play Integrity or
-Apple App Attest), used to check the request comes from a genuine copy of the app.
+Apple App Attest or DeviceCheck), used to check the request comes from a genuine copy of the app.
 When a relay is used, your game traffic for that session passes through Cloudflare's
 relay. We do not store a profile from these requests. The app may also ask a public
 STUN server run by Cloudflare for your public address, to set up the connection.
