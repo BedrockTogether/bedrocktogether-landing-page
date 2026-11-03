@@ -4,7 +4,7 @@ title: How to Join a Minecraft Server on Nintendo Switch
 nav_title: Switch
 nav_order: 3
 include_in_header: true
-description: "Nintendo Switch cannot see LAN servers in Minecraft. BedrockTogether's Switch · Friends broadcast puts your server in the in-game Friends tab instead. Read the account warning first."
+description: "Nintendo Switch cannot see LAN servers in Minecraft. BedrockTogether's Friends broadcast (Android) puts your server in the in-game Friends tab instead. Read the account warning first."
 seo:
   type: Article
 ---
@@ -16,7 +16,11 @@ so the method that works on Xbox and PlayStation cannot work here. Instead,
 BedrockTogether has a second method: it broadcasts your server over Xbox Live so that it
 shows up in Minecraft's in-game **Friends** tab, which the Switch *does* read.
 
-This is the **Switch · Friends** tab in the app, and it is still marked **BETA**.
+This is the **Friends** tab in the app, and it is still marked **BETA**.
+
+> **Android only.** The Xbox Live Friends broadcast is available in the Android app.
+> On iPhone and iPad the Friends broadcast is not available.
+> <!-- TODO owner: Switch on iOS / Alternative -->
 
 ## Read this before you start
 
@@ -36,13 +40,14 @@ caveat, and you should prefer it there.
 ## What you need
 
 * A Nintendo Switch, Switch Lite or Switch OLED with Minecraft Bedrock Edition
-* An iPhone, iPad or Android phone with BedrockTogether installed
+* An Android phone (Android 8.0 or newer) with BedrockTogether installed
+* Minecraft **1.26.60 or newer**
 * **A throwaway Microsoft account** with an Xbox profile (gamertag) on it
 * The server's IP address and port
 
 ## Step by step
 
-1. **Open BedrockTogether** and switch to the **Switch · Friends** tab.
+1. **Open BedrockTogether** and switch to the **Friends** tab.
 2. **Enter the server IP and port** you want to play on.
 3. **Tap "Sign in and Broadcast".** Read the warning, then continue.
 4. **Sign in with your separate Microsoft account.** The app shows a code and opens the
@@ -60,6 +65,14 @@ Tap **Stop Broadcast** in the app when you are finished.
 
 * **The account must be a friend of the account you play on.** Add the broadcast
   gamertag as a friend from your Switch first, otherwise its game will not be listed.
+  While the broadcast runs, the app accepts friend requests automatically (about every
+  20 seconds), so give it a moment after you send one.
+* **Keep notifications allowed** for BedrockTogether in Android settings, so the app can
+  keep running while you switch to your Switch.
+* **Some accounts cannot broadcast.** The app tells you if a guardian must allow online
+  play (`account.microsoft.com/family`), if the account has an unfinished step, if Xbox
+  Live is unavailable in your country, or if the account is signed in on too many
+  devices.
 * **This method is not Switch-only.** Because it goes through Xbox Live rather than the
   local network, it also works when the LAN method fails on Xbox or PlayStation — for
   example on a network you do not control, like a dorm or hotel Wi-Fi.

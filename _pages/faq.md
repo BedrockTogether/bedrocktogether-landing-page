@@ -14,9 +14,11 @@ seo:
 ## Is BedrockTogether free?
 
 Yes. The app is free on the App Store and Google Play, and is paid
-for by ads. There is an ad-free version if you would rather not watch them, available
-from **Info → Ad-free Version** in the app. Saving more than two favourite servers is
-also part of the paid version.
+for by ads. **BedrockTogether Pro** is a one-time payment, with no subscription: it
+removes ads, lets you save unlimited favourite servers (the free app allows 2) and
+hides the Partnered Servers list. On Android, Pro is a separate app on
+[Google Play]({{ site.playstore_pro_link }}); on iOS it is an in-app purchase under
+**Info → Ad-free Version**. In Pro the button reads "Run" instead of "Watch Ad and Run".
 
 ## Do I need a PC?
 
@@ -33,13 +35,20 @@ use DNS.
 
 Xbox One, Xbox Series S and Series X, PlayStation 4 and PlayStation 5 all work with the
 LAN method. Nintendo Switch needs the
-[broadcast method](/how-to-join-minecraft-server-nintendo-switch/) instead, because the
-Switch does not display LAN games. It also works on mobile and PC editions.
+[Friends broadcast](/how-to-join-minecraft-server-nintendo-switch/) instead, because the
+Switch does not display LAN games. That broadcast is **Android only**; on iPhone and
+iPad it is not available. It also works on mobile and PC editions.
+<!-- TODO owner: Switch on iOS / Alternative -->
+
+## Which Minecraft and phone versions are supported?
+
+Minecraft **1.26.60 and newer**. Your phone needs Android 8.0 or newer, or iOS 15 or
+newer.
 
 ## Why doesn't the normal method work on Nintendo Switch?
 
 Minecraft on Switch does not list LAN games at all, so there is nothing for the app to
-appear in. The **Switch · Friends** broadcast method goes through Xbox Live instead.
+appear in. The **Friends** broadcast method (Android app) goes through Xbox Live instead.
 Read the account warning on that page before you use it.
 
 ## Will I get banned for using this?
@@ -49,7 +58,7 @@ Two different answers, depending on the method.
 **The LAN method** (Xbox, PlayStation) uses Minecraft's ordinary local-network
 discovery — the same thing that happens when someone in your house opens a world to LAN.
 
-**The broadcast method** (Switch · Friends) works by emulating a game client against
+**The broadcast method** (the Friends tab, Android) works by emulating a game client against
 Xbox Live. This may break Xbox Live's terms of service, and the account you sign in with
 could be banned. Always sign in with a **separate, throwaway Microsoft account**, never
 the one you play on. The app warns you about this before sign-in, and we mean it.
@@ -66,12 +75,17 @@ app has finished its work and you can close it.
 ## What port should I use?
 
 `19132` unless the server tells you otherwise. That is the default for Minecraft Bedrock
-servers.
+servers. That is the port of the *server* you join. Separately, the phone uses UDP port
+`7551` to show the LAN world to your console; if the app says that port is in use, fully
+close Minecraft on that device and any other server apps, then start again.
 
 ## Where do I find servers to play on?
 
-Any public Bedrock server address works. The app also lists partnered servers, and you
-can save your own favourites.
+Any public Bedrock server address works. On Android the **Servers** tab is a searchable
+catalog, with sponsored and partner rows marked, and live player counts that are
+measured from your own device — "Offline" means your device could not reach that server.
+The app also lists Partnered Servers on the main screen (Pro hides that list), and you
+can save your own favourites (2 in the free app, unlimited in Pro).
 
 ## Can I use my own server?
 
@@ -104,7 +118,7 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "name": "Is BedrockTogether free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The app is free on the App Store and Google Play and is paid for by ads. An ad-free version is available from Info → Ad-free Version inside the app."
+        "text": "Yes. The app is free on the App Store and Google Play and is paid for by ads. BedrockTogether Pro is a one-time payment that removes ads, allows unlimited favourite servers and hides the Partnered Servers list. On Android it is a separate app on Google Play; on iOS it is an in-app purchase."
       }
     },
     {
@@ -120,7 +134,7 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "name": "Which consoles does BedrockTogether work on?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Xbox One, Xbox Series S and Series X, PlayStation 4 and PlayStation 5 work with the LAN method. Nintendo Switch needs the Xbox Live broadcast method instead, because the Switch does not display LAN games."
+        "text": "Xbox One, Xbox Series S and Series X, PlayStation 4 and PlayStation 5 work with the LAN method. Nintendo Switch needs the Xbox Live Friends broadcast instead, because the Switch does not display LAN games. The Friends broadcast is available on Android only; on iPhone and iPad it is not available. Minecraft 1.26.60 or newer is required."
       }
     },
     {
@@ -128,7 +142,7 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "name": "Why doesn't the LAN method work on Nintendo Switch?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Minecraft on Nintendo Switch does not list LAN games at all, so there is nothing for the app to appear in. The Switch · Friends broadcast method goes through Xbox Live instead."
+        "text": "Minecraft on Nintendo Switch does not list LAN games at all, so there is nothing for the app to appear in. The Friends broadcast method (Android app) goes through Xbox Live instead."
       }
     },
     {
@@ -136,7 +150,7 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "name": "Will I get banned for using BedrockTogether?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The LAN method used on Xbox and PlayStation relies on Minecraft's ordinary local-network discovery. The Switch · Friends broadcast method emulates a game client against Xbox Live, which may break Xbox Live's terms of service, and the account signed in could be banned. Always use a separate throwaway Microsoft account for broadcasting, never your main one."
+        "text": "The LAN method used on Xbox and PlayStation relies on Minecraft's ordinary local-network discovery. The Friends broadcast method (Android) emulates a game client against Xbox Live, which may break Xbox Live's terms of service, and the account signed in could be banned. Always use a separate throwaway Microsoft account for broadcasting, never your main one."
       }
     },
     {
@@ -145,6 +159,14 @@ See also: [Xbox guide](/how-to-join-minecraft-server-xbox/) ·
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "For the LAN method, yes — that is the whole mechanism. For the Xbox Live broadcast method, no."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Minecraft version does BedrockTogether support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minecraft 1.26.60 and newer. The phone needs Android 8.0 or newer, or iOS 15 or newer."
       }
     },
     {

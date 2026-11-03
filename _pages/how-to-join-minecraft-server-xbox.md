@@ -25,16 +25,17 @@ No PC. No DNS rerouting. No router configuration.
 * An Xbox with Minecraft Bedrock Edition
 * An iPhone, iPad or Android phone with [BedrockTogether](#get-the-app) installed
 * Both devices on **the same Wi-Fi network**
+* Minecraft **1.26.60 or newer**, and Android 8.0+ or iOS 15+ on your phone
 * The server's **IP address and port** (most Bedrock servers use port `19132`)
 
 ## Step by step
 
 1. **Connect your phone and your Xbox to the same Wi-Fi.** This is the step people get
    wrong most often — a guest network, or a phone still on mobile data, will not work.
-2. **Open BedrockTogether** and stay on the **PlayStation · Xbox** tab.
+2. **Open BedrockTogether** and stay on the **LAN** tab.
 3. **Type the server address** into the IP field and the port into the port field.
    If the server lists no port, use `19132`.
-4. **Tap "Watch Ad and Run".** The app confirms: *Server is running and will transfer
+4. **Tap "Watch Ad and Run"** (in Pro: "Run"). The app confirms: *Server is running and will transfer
    to <span>&lt;ip&gt;:&lt;port&gt;</span>*. Leave the app open and your phone awake for now.
 5. **On your Xbox, start Minecraft** and open the **Play** menu, then the **Worlds**
    tab. Your server appears there as a joinable LAN game.
@@ -59,15 +60,17 @@ there is nothing to change and nothing to undo.
 **Will this get me banned?** The LAN method uses Minecraft's ordinary local-network
 discovery — the same mechanism as playing on a world hosted by someone in your house.
 See the [FAQ](/faq/) for the separate warning that applies to the Nintendo Switch
-broadcast method.
+broadcast method (Android only).
 
-**Can my friends join too?** Anyone on the same server can play with you. To play with
-friends who are not in your house, they run the app on their own network.
+**Can my friends join too?** Each player runs BedrockTogether on their own phone and
+joins the same server address.
 
 ## Get the app
 
-BedrockTogether is free on the App Store and Google Play. A
-paid ad-free version is available from **Info → Ad-free Version** inside the app.
+BedrockTogether is free on the App Store and Google Play. BedrockTogether Pro removes
+ads (one-time payment): on Android it is a separate app on
+[Google Play]({{ site.playstore_pro_link }}), on iOS an in-app purchase under
+**Info → Ad-free Version**.
 
 See also: [PlayStation guide](/how-to-join-minecraft-server-playstation/) ·
 [Nintendo Switch guide](/how-to-join-minecraft-server-nintendo-switch/) ·

@@ -94,8 +94,8 @@ partners listed below. Those partners may also derive an approximate location
 (typically city-level, from your IP address). The app itself never asks for or
 uses precise location — there is no location permission in the app.
 
-**Xbox Live sign-in (only if you use Switch · Friends).** If you use the broadcast
-feature, you sign in with a Microsoft account. The resulting token is stored
+**Xbox Live sign-in (only if you use the Friends tab on Android).** If you use the Xbox Live
+broadcast feature (Android only), you sign in with a Microsoft account. The resulting token is stored
 encrypted on your device and used to publish the session. We do not receive your
 Microsoft password. We strongly recommend using a separate account for this, as
 the app warns before sign-in.
